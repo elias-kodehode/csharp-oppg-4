@@ -1,20 +1,6 @@
-﻿//record Customer(
-//	int Index,
-//	int CustomerId,
-//	string FirstName,
-//	string LastName,
-//	string Company,
-//	string City,
-//	string Country,
-//	string Phone1,
-//	string Phone2,
-//	string Email,
-//	string Subscription,
-//	DateTime Date,
-//	string Website);
+﻿using CSharp_Oppg_4.Attributes;
 
-
-using CSharp_Oppg_4.Attributes;
+namespace CSharp_Oppg_4.Models;
 
 public record class Customer
 {
@@ -35,12 +21,11 @@ public record class Customer
 
 
 	[CsvIgnore]
-	public string Testing { get; set; }
+	public string Testing { get; set; } = "this should not be parsed";
 
-	public Customer()
-	{
 
-	}
+	//empty constructor for the CsvMapper
+	public Customer() { }
 
 	public Customer(int index, int customerId, string firstName, string lastName, string company, string city, string country, string phone1, string phone2, string email, string subscription, DateTime date, string website)
 	{

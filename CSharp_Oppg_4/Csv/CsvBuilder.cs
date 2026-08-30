@@ -4,7 +4,10 @@ using CSharp_Oppg_4.Attributes;
 namespace CSharp_Oppg_4.Csv;
 
 
-
+/// <summary>
+/// Convert a c# object of type <T> to csv
+/// </summary>
+/// <typeparam name="T"></typeparam>
 public class CsvBuilder<T>
 {
 	readonly string _header = "";

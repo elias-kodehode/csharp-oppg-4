@@ -2,6 +2,13 @@
 
 public class CsvReader
 {
+
+	/// <summary>
+	/// Read CSV file and convert it to a List of dictionary for easy further mapping
+	/// </summary>
+	/// <param name="path"></param>
+	/// <returns></returns>
+	/// <exception cref="Exception"></exception>
 	public static List<Dictionary<string, string>> Read(string path)
 	{
 		var lines = File.ReadAllLines(path);

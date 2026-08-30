@@ -1,4 +1,5 @@
 ﻿using Bogus;
+using CSharp_Oppg_4.Models;
 
 namespace CSharp_Oppg_4.Generators;
 

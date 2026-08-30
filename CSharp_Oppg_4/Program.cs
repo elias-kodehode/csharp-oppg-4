@@ -1,5 +1,6 @@
 ﻿using CSharp_Oppg_4.Csv;
 using CSharp_Oppg_4.Generators;
+using CSharp_Oppg_4.Models;
 
 new CsvBuilder<Customer>()
 	.ParseObjects(CsvGenerator.GetCustomersBogus())
